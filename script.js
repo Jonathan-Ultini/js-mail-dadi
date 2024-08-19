@@ -62,7 +62,9 @@ verificaEmail.addEventListener('click', function () {
   // Stampa il risultato del controllo in pagina
   if (emailTrovata) {
     esitoLogin.innerHTML = "Accesso consentito.";
+    esitoLogin.className = "accesso-consentito";
   } else {
     esitoLogin.innerHTML = "Accesso negato.";
+    esitoLogin.className = "accesso-negato";
   }
 });
