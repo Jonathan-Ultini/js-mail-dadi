@@ -52,10 +52,9 @@ verificaEmail.addEventListener('click', function () {
   let emailTrovata = false;
 
   // Controlla se l'email è nella lista autorizzata
-  for (let i = 0; i < emailAutorizzate.length; i++) {
+  for (let i = 0; !emailTrovata && i < emailAutorizzate.length; i++) {
     if (emailUtente === emailAutorizzate[i]) {
       emailTrovata = true;
-      break;
     }
   }
 
